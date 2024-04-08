@@ -13,6 +13,39 @@ public abstract class Animal {
 		this.chip = chip;
 		this.raza = raza;
 	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public String getChip() {
+		return chip;
+	}
+
+	public void setChip(String chip) {
+		this.chip = chip;
+	}
+
+	public String getRaza() {
+		return raza;
+	}
+
+	public void setRaza(String raza) {
+		this.raza = raza;
+	}
+	
 	
 	
 }
