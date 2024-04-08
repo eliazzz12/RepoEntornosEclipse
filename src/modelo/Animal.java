@@ -46,6 +46,6 @@ public abstract class Animal {
 		this.raza = raza;
 	}
 	
-	
+	public abstract void hacerRuido();
 	
 }
