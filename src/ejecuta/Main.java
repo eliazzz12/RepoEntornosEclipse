@@ -18,6 +18,9 @@ public class Main {
 		mascotas.add(new Gato("Fluffy", 4, "872SD", "Blanco"));
 		mascotas.add(new Perro("Cheddar", 9, "210CD", "Salchicha"));
 		mascotas.add(new Perro("Nami", 8, "103DM", "Border Collie"));
+
+		todosRuido();
+
 	}
 
 	private static void mostrarAnimal(Animal animal) {
@@ -28,4 +31,16 @@ public class Main {
 		System.out.println("Chip:"+animal.getChip());
 	}
 	
+	private static void todosRuido() {
+		for(Animal a : mascotas) {
+			if(a instanceof Perro) {
+				Perro p = (Perro) a;
+				p.hacerRuido();
+			}
+			else if(a instanceof Gato) {
+				Gato g = (Gato) a;
+				g.hacerRuido();
+			}
+		}
+	}
 }
