@@ -13,6 +13,11 @@ public class Main {
 	public static void main(String[] args) {
 		mascotas.add(new Perro("Pluto", 7, "153AW", "Labrador"));
 		mascotas.add(new Gato("Silvestre", 4, "627FB", "Negro"));
+		
+		mascotas.add(new Gato("Garfield", 5, "613GL", "Negro"));
+		mascotas.add(new Gato("Fluffy", 4, "872SD", "Blanco"));
+		mascotas.add(new Perro("Cheddar", 9, "210CD", "Salchicha"));
+		mascotas.add(new Perro("Nami", 8, "103DM", "Border Collie"));
 	}
 
 	private static void mostrarAnimal(Animal animal) {
