@@ -1,7 +1,9 @@
 package modelo;
 
 public class Gato extends Animal {
-
+	
+	private int vidas;
+	
 	public Gato(String nombre, int edad, String chip, String raza) {
 		super(nombre, edad, chip, raza);
 	}
@@ -11,5 +13,11 @@ public class Gato extends Animal {
 		System.out.println("miau");
 	}
 	
+	public int getVidas() {
+		return vidas;
+	}
 	
+	public void setVidas(int vidas) {
+		this.vidas = vidas;
+	}
 }
