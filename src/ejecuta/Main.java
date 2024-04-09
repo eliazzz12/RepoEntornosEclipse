@@ -13,6 +13,8 @@ public class Main {
 	public static void main(String[] args) {
 		mascotas.add(new Perro("Pluto", 7, "153AW", "Labrador"));
 		mascotas.add(new Gato("Silvestre", 4, "627FB", "Negro"));
+		
+		todosRuido();
 	}
 
 	private static void mostrarAnimal(Animal animal) {
@@ -23,4 +25,16 @@ public class Main {
 		System.out.println("Chip:"+animal.getChip());
 	}
 	
+	private static void todosRuido() {
+		for(Animal a : mascotas) {
+			if(a instanceof Perro) {
+				Perro p = (Perro) a;
+				p.hacerRuido();
+			}
+			else if(a instanceof Gato) {
+				Gato g = (Gato) a;
+				g.hacerRuido();
+			}
+		}
+	}
 }
