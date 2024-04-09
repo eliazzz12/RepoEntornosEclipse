@@ -11,6 +11,10 @@ public class Perro extends Animal{
 		System.out.println("guau!");
 	}
 	
+	public double calcularEdad() {
+		return this.getEdad()* 7;
+	}
+	
 	public void hacerRuido(String ruido) {
 		System.out.println(ruido);
 	}
