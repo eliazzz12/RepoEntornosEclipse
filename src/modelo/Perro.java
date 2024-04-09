@@ -6,4 +6,8 @@ public class Perro extends Animal{
 		super(nombre, edad, chip, raza);
 	}
 	
+	@Override
+	public void hacerRuido() {
+		System.out.println("guau!");
+	}
 }
