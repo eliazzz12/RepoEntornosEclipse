@@ -10,4 +10,8 @@ public class Perro extends Animal{
 	public void hacerRuido() {
 		System.out.println("guau!");
 	}
+	
+	public void hacerRuido(String ruido) {
+		System.out.println(ruido);
+	}
 }
