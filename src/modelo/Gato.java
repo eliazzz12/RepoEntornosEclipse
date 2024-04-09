@@ -20,4 +20,9 @@ public class Gato extends Animal {
 	public void setVidas(int vidas) {
 		this.vidas = vidas;
 	}
+	
+	@Override
+	public int compareTo(Animal a) {
+		return this.getNombre().compareTo(a.getNombre());
+	}
 }
