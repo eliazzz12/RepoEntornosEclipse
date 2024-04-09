@@ -14,4 +14,9 @@ public class Perro extends Animal{
 	public void hacerRuido(String ruido) {
 		System.out.println(ruido);
 	}
+	
+	@Override
+	public int compareTo(Animal a) {
+		return this.getNombre().compareTo(a.getNombre());
+	}
 }

@@ -1,6 +1,6 @@
 package modelo;
 
-public abstract class Animal {
+public abstract class Animal implements Comparable<Animal>{
 	private String nombre;
 	private int edad;
 	private String chip;

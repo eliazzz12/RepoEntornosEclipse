@@ -11,6 +11,9 @@ public class Gato extends Animal {
 		System.out.println("MIAAAAAAAU");
 	}
 	
-
+	@Override
+	public int compareTo(Animal a) {
+		return this.getNombre().compareTo(a.getNombre());
+	}
 	
 }
